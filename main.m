@@ -7,22 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSArray+TDSafeArray.h"
-#import "NSMutableArray+TDSafeMutableArray.h"
-
+#import "TDSafeArray.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
         
         NSArray *arr = [[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5", nil];
+        NSInteger index = 6;
+        id result = [arr safe_objectAtIndex:index];
+        NSLog(@"result :%@",result);
+
         
-        NSRange range = NSMakeRange(3, 5);
-        NSIndexSet *indexSet = [[NSIndexSet alloc]initWithIndexesInRange:range];
-        
-        NSArray *tmp = [arr safe_objcetsAtIndexes:indexSet];
-        
-        NSLog(@"objcets at indexes:%@",tmp);
 
     }
     return 0;
