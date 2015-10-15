@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B9C917571BCF68C8000CB897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C917561BCF68C8000CB897 /* main.m */; };
+		B9C917621BCF68E9000CB897 /* NSArray+TDSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9175F1BCF68E9000CB897 /* NSArray+TDSafeArray.m */; settings = {ASSET_TAGS = (); }; };
+		B9C917671BCF6956000CB897 /* NSMutableArray+TDSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C917661BCF6956000CB897 /* NSMutableArray+TDSafeMutableArray.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		B9C917531BCF68C8000CB897 /* TDSafeArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDSafeArray; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C917561BCF68C8000CB897 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9C9175E1BCF68E9000CB897 /* NSArray+TDSafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TDSafeArray.h"; sourceTree = "<group>"; };
+		B9C9175F1BCF68E9000CB897 /* NSArray+TDSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TDSafeArray.m"; sourceTree = "<group>"; };
+		B9C917651BCF6956000CB897 /* NSMutableArray+TDSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+TDSafeMutableArray.h"; sourceTree = "<group>"; };
+		B9C917661BCF6956000CB897 /* NSMutableArray+TDSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+TDSafeMutableArray.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,8 @@
 		B9C9174A1BCF68C8000CB897 = {
 			isa = PBXGroup;
 			children = (
+				B9C917641BCF6956000CB897 /* NSMutableArray */,
+				B9C9175D1BCF68E9000CB897 /* NSArray */,
 				B9C917551BCF68C8000CB897 /* TDSafeArray */,
 				B9C917541BCF68C8000CB897 /* Products */,
 			);
@@ -60,6 +68,24 @@
 				B9C917561BCF68C8000CB897 /* main.m */,
 			);
 			path = TDSafeArray;
+			sourceTree = "<group>";
+		};
+		B9C9175D1BCF68E9000CB897 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9175E1BCF68E9000CB897 /* NSArray+TDSafeArray.h */,
+				B9C9175F1BCF68E9000CB897 /* NSArray+TDSafeArray.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		B9C917641BCF6956000CB897 /* NSMutableArray */ = {
+			isa = PBXGroup;
+			children = (
+				B9C917651BCF6956000CB897 /* NSMutableArray+TDSafeMutableArray.h */,
+				B9C917661BCF6956000CB897 /* NSMutableArray+TDSafeMutableArray.m */,
+			);
+			path = NSMutableArray;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9C917571BCF68C8000CB897 /* main.m in Sources */,
+				B9C917621BCF68E9000CB897 /* NSArray+TDSafeArray.m in Sources */,
+				B9C917671BCF6956000CB897 /* NSMutableArray+TDSafeMutableArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
